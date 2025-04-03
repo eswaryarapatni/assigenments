@@ -58,6 +58,21 @@
 # for i in coll:
 #     print(i**2)
     
-names={"s1":"eswar","s2":"uday","s3":"yuvaraj","s4":"venkat"}
-for i,j in names.items():
-    print(i,":",j)
+# names={"s1":"eswar","s2":"uday","s3":"yuvaraj","s4":"venkat"}
+# for i in names.keys():
+#     print(names[i])
+
+def getDetails():
+    name=str(input("enter name:"))
+    age=int(input("enter age:"))
+    addr=str(input("enter address:"))
+    details={"name":name,"age":age,"address":addr}
+    return details
+
+def prntdet(details):
+    print("name:",details["name"])
+    print("age:",details["age"])
+    print("address:",details[])
+    
+det=getDetails()
+prntdet(det)
