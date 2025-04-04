@@ -72,7 +72,7 @@ def getDetails():
 def prntdet(details):
     print("name:",details["name"])
     print("age:",details["age"])
-    print("address:",details[])
+    print("address:",details["addr"])
     
 det=getDetails()
 prntdet(det)
